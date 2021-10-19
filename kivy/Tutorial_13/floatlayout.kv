@@ -1,0 +1,28 @@
+# inherit the color properties
+<Button>
+    font_size: 32
+    size_hint: (0.3,0.3) # 30% of height of app it will take the space
+
+<MyLayout>
+
+    FloatLayout
+        size: root.width, root.height
+
+
+        Button:
+            text: "Top Left"
+            #{'x', 'y', 'top','bottom', 'left', 'right'} x and y takes 0 to 1 means decimal terms of the percentage
+            #make sure x in small cap
+            pos_hint: {"x":0, "top":1}
+        Button:
+            text: "Top Right"
+            pos_hint: {"x":0.7, "top":1} # why .7 why not 1 just because .3 size of the button already defined
+        Button:
+            text: "Center"
+            pos_hint:{'x':.35, 'top':.66}
+        Button:
+            text: "Bottom left"
+            pos_hint: {"x":0}
+        Button:
+            text: "Bottom Right"
+            pos_hint: {"x":0.7, "bottom":1}

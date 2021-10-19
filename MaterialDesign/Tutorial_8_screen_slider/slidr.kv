@@ -1,0 +1,30 @@
+<MYSwiper@MDSwiperItem>
+
+MDScreen:
+    MDToolbar:
+        id: toolbar
+        title: 'our swiper app'
+        elevation: 10
+        pos_hint: {'top':1}
+    MDSwiper:
+        size_hint_y: None
+        height: root.height-toolbar.height-dp(40)
+        y: root.height-self.height-toolbar.height-dp(20)
+
+        MYSwiper:
+            FitImage:
+                source: 'D:/kivy/file/Tiger.png'
+                radius: [2,]
+        MYSwiper:
+            FitImage:
+                source: 'D:/kivy/file/flower.jpeg'
+                radius: [20,]
+        MYSwiper:
+            FitImage:
+                source: 'D:/kivy/file/OIP.jpg'
+                radius: [20,]
+        MYSwiper:
+            FitImage:
+                source: 'D:/kivy/file/Mountain.jpg'
+                radius: [20,]
+

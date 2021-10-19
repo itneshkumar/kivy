@@ -1,0 +1,1 @@
+go to script folder and run the auto_py

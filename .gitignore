@@ -1,0 +1,8 @@
+#folder
+Android/
+windows_software/
+__pycache__/
+.idea
+.git
+.buildozer
+MD/

@@ -1,0 +1,33 @@
+<MyGridLayout>
+    name: Name
+    pizza: Pizza
+    color: Color
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "Name"
+            TextInput:
+                id: Name
+                multiline: False
+            Label:
+                text: "Favorite Pizza"
+            TextInput:
+                id: Pizza
+                multiline: False
+            Label:
+                text: "Color"
+            TextInput:
+                id: Color
+                multiline: False
+        Button:
+            text: "submit"
+            font_size: 32
+            on_press : root.press()
+            #RGB -A
+            #background_normal: ""
+            background_color:(163/255.0,232/250,50/250,0.5) # pick the code from color picker and don't forgot to devide 255.0, 250, 250
